@@ -1,6 +1,7 @@
 FROM ubuntu
 MAINTAINER EDEM GBADABIZO (edemgbadabizo@gmail.com)
 RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git
 RUN apt-get install -y nginx
 RUN apt-get install -y php
 RUN apt-get install -y php-cli
